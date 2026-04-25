@@ -80,4 +80,4 @@ curl -X POST http://localhost:8000/ask \
 Health check — confirms the app is running.
 
 ## Live Demo
-Coming soon — will be updated after deployment.
+https://document-qna-api.onrender.com/docs#/
