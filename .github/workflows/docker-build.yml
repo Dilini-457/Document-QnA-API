@@ -1,0 +1,23 @@
+name: Build and Test Docker Image
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1 - Download the code
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Step 2 - Build the Docker image
+      - name: Build Docker image
+        run: docker build -t rag-app .
+
+      # Step 3 - Confirm it built successfully
+      - name: Confirm build success
+        run: echo "Docker image built successfully!"
