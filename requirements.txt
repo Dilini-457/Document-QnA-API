@@ -6,3 +6,5 @@ pypdf2
 python-dotenv
 numpy
 scikit-learn
+streamlit
+requests
